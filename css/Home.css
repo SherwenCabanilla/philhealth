@@ -1,0 +1,39 @@
+@media screen and (min-width: 1200px) {
+  .content {
+    font-size: 92%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .card-body {
+    order: 2;
+  }
+  .rounded-start {
+    margin-bottom: 1rem;
+  }
+}
+.img-rb{
+  border-radius: 20px;
+}
+
+
+
+.transparent1{
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.412);
+}
+
+.tran{
+  background-color: rgba(40, 42, 41, 0.604);
+}
+
+.padding-top{
+  padding-top: 130px;
+}
+
+#myCarousel .carousel-item img {
+    height: 300px; 
+    object-fit: cover;
+  }

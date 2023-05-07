@@ -1,0 +1,16 @@
+.my-nav {
+  background-color: #329900;
+}
+
+.space {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 100%;
+  max-width: 130px;
+}
+
+
+

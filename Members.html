@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/members.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/hover.css" />
+  <link rel="icon" href="images/pLogo.png">
+
+  <title>Members | PhilHealth</title>
+</head>
+
+<body>
+  <div class="my-nav fixed-top" style="background-image: url(bg2.jpg);">
+    <nav class="navbar navbar-expand-md green-nav space">
+      <div class="container-fluid">
+        <a class="try" href="Index.html" style="color: white;"><img src="images\phil.png" alt=""
+            class="logo img-fluid" /></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active home" aria-current="page" href="Index.html" style="color: white">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link about" href="about.html" style="color: white">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link members" href="Members.html" style="color: rgb(251, 255, 0)">Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link benefits" href="Benefits.html" style="color: white">Benefits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link service" href="service.html" style="color: white">Online Service</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                style="color: white">
+                Contact us
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="https://www.facebook.com/PhilHealthOfficial">Facebook</a>
+                </li>
+                <li>
+                  <a class="dropdown-item"
+                    href="https://mail.google.com/mail/u/0/#search/actioncenter%40philhealth.gov.ph">Email</a>
+                </li>
+                <li>
+                  <a class="dropdown-item"
+                    href="https://twitter.com/teamphilhealth/status/1397064481604210689">Twitter</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <form class="d-sm-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success btn-outline-light" type="submit">
+                  Search
+                </button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="modal-overlay">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close m-2" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          PhilHealth membership provides access to comprehensive healthcare services and benefits, giving you peace of
+          mind and helping you manage your medical expenses. Join now to invest in your health and well-being.
+        </div>
+        <div class="modal-footer">
+          <a href="#form" class="btn btn-success" onclick="goToForm()">Become a Member</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var modalOverlay = document.querySelector('.modal-overlay');
+    var closeButton = document.querySelector('.btn-close');
+
+    closeButton.addEventListener('click', function () {
+      modalOverlay.remove();
+    });
+
+    function goToForm() {
+      modalOverlay.remove();
+      document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+  <div class="card-deck  separate">
+    <div data-aos="zoom-in">
+      <div class="card container">
+        <img src="images/member (2).jpg" class="card-img-top img-fluid car-max" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Direct Contributors</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Employees with formal employment</li>
+            <li class="list-group-item">Kasambahays</li>
+            <li class="list-group-item">
+              Self-earning individuals; Professional practitioners
+            </li>
+            <li class="list-group-item">Overseas Filipino Workers</li>
+            <li class="list-group-item">
+              Filipinos living abroad and those with dual citizenship
+            </li>
+            <li class="list-group-item">Lifetime members</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card container" data-aos="zoom-in">
+        <div class="card-body">
+          <h5 class="card-title">Indirect Contributors
+          </h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Indigents identified by the DSWD</li>
+            <li class="list-group-item">Senior citizens
+            </li>
+            <li class="list-group-item">
+              Beneficiaries of Pantawid Pamilyang Pilipino Program
+            </li>
+            <li class="list-group-item">Sangguniang Kabataan officials
+            </li>
+            <li class="list-group-item">
+              Persons with disability
+            </li>
+            <li class="list-group-item">Previously identified at point-of-service / sponsored by LGUs
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div data-aos="zoom-in">
+      <div class="container mb-5 border p-5 mt-5 rounded" id="form">
+        <h2 class="mt-4 mb-4">BE A PHILHEALTH MEMBER!</h2>
+        <form id="form">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="first_name">First Name:</label>
+                <input type="text" class="form-control" id="first_name" name="first_name" required>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="middle_name">Middle Name:</label>
+                <input type="text" class="form-control" id="middle_name" name="middle_name">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="last_name">Last Name:</label>
+                <input type="text" class="form-control" id="last_name" name="last_name" required>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" class="form-control" id="age" name="age" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" class="form-control" id="birthdate" name="birthdate" required>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="sex">Sex:</label>
+                <select class="form-control" id="sex" name="sex" required>
+                  <option value="">Select sex</option>
+                  <option value="M">Male</option>
+                  <option value="F">Female</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="status">Status:</label>
+                <select class="form-control" id="status" name="status" required>
+                  <option value="">Select status</option>
+                  <option value="Single">Single</option>
+                  <option value="Married">Married</option>
+                  <option value="Widowed">Widowed</option>
+                  <option value="Divorced">Divorced</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-success mt-2" onclick="showAlert()">Submit</button>
+          </div>
+      </div>
+
+      <script>
+        function showAlert() {
+          alert("Account added!");
+        }
+      </script>
+
+
+    </div>
+    </form>
+    <hr data-aos="fade-right">
+    <div data-aos="zoom-in">
+      <h3 class="d-flex align-items-center justify-content-center">Members</h3>
+      <div class="table-responsive">
+        <table id="table" class="table">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Middle Name</th>
+              <th>Last Name</th>
+              <th>Age</th>
+              <th>Birthdate</th>
+              <th>Sex</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Bulda</td>
+              <td>Hudas</td>
+              <td>30</td>
+              <td>1992-01-01</td>
+              <td>Male</td>
+              <td>Married</td>
+            </tr>
+            <tr>
+              <td>Jane</td>
+              <td>Nabroza</td>
+              <td>Gombua</td>
+              <td>25</td>
+              <td>1997-03-15</td>
+              <td>Female</td>
+              <td>Single</td>
+            </tr>
+            <tr>
+              <td>Mark</td>
+              <td>Anthony</td>
+              <td>Garcia</td>
+              <td>45</td>
+              <td>1977-11-30</td>
+              <td>Male</td>
+              <td>Widowed</td>
+            </tr>
+            <tr>
+              <td>Dulce</td>
+              <td>Cabroda</td>
+              <td>Rudita</td>
+              <td>63</td>
+              <td>1960-04-20
+              </td>
+              <td>Female</td>
+              <td>Widowed</td>
+            </tr>
+            <tr>
+              <td>John</td>
+              <td>Dapco</td>
+              <td>Burdos</td>
+              <td>52</td>
+              <td>1971-01-24</td>
+              <td>Male</td>
+              <td>Single</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      var currentRow = null;
+
+      $("#form").submit(function (event) {
+        event.preventDefault();
+        var firstName = $("#first_name").val();
+        var middleName = $("#middle_name").val();
+        var lastName = $("#last_name").val();
+        var age = $("#age").val();
+        var birthdate = $("#birthdate").val();
+        var sex = $("#sex").val();
+        var status = $("#status").val();
+
+        if (currentRow) {
+          currentRow.find('td:eq(0)').text(firstName);
+          currentRow.find('td:eq(1)').text(middleName);
+          currentRow.find('td:eq(2)').text(lastName);
+          currentRow.find('td:eq(3)').text(age);
+          currentRow.find('td:eq(4)').text(birthdate);
+          currentRow.find('td:eq(5)').text(sex);
+          currentRow.find('td:eq(6)').text(status);
+          currentRow = null;
+          $("#form-submit").text("Submit");
+          $("#form-title").text("Add a new entry");
+        } else {
+          $("#table tbody").append("<tr><td>" + firstName + "</td><td>" + middleName + "</td><td>" + lastName + "</td><td>" + age + "</td><td>" + birthdate + "</td><td>" + sex + "</td><td>" + status + "</td><td><a href='#form' class='btn btn-info edit-row'>Edit</a><button class='btn btn-danger delete-row'>Delete</button></td></tr>");
+        }
+
+
+        $("#first_name").val("");
+        $("#middle_name").val("");
+        $("#last_name").val("");
+        $("#age").val("");
+        $("#birthdate").val("");
+        $("#sex").val("");
+        $("#status").val("");
+      });
+
+
+      function editRow(row) {
+        currentRow = $(row).closest('tr');
+        var cells = currentRow.find('td');
+        var firstName = cells.eq(0).text();
+        var middleName = cells.eq(1).text();
+        var lastName = cells.eq(2).text();
+        var age = cells.eq(3).text();
+        var birthdate = cells.eq(4).text();
+        var sex = cells.eq(5).text();
+        var status = cells.eq(6).text();
+
+        $("#first_name").val(firstName);
+        $("#middle_name").val(middleName);
+        $("#last_name").val(lastName);
+        $("#age").val(age);
+        $("#birthdate").val(birthdate);
+        $("#sex").val(sex);
+        $("#status").val(status);
+      }
+
+
+      $(document).on("click", ".edit-row", function () {
+        editRow(this);
+        $("#form-submit").text("Save Changes");
+        $("#form-title").text("Edit entry");
+      });
+
+
+      $(document).on("click", ".delete-row", function () {
+        $(this).closest('tr').remove();
+      });
+    });
+  </script>
+
+
+
+
+
+  <footer class="footer"
+    style="background-image: url(images/bg2.jpg); color: white; background-repeat: no-repeat; background-size: cover;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Contact us</h4>
+          <ul class="list-unstyled">
+            <li><i class="fa fa-phone"></i>8441-7442</li>
+            <li>
+              <i class="fa fa-envelope"></i> actioncenter@philhealth.gov.ph
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Follow us on</h4>
+          <ul class="list-inline">
+            <li>
+              <a href="https://www.facebook.com/PhilHealthOfficial"><i class="fa fa-facebook"></i><img
+                  src="images/fb2.png" alt="" height="50px" /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/teamphilhealth/status/1397064481604210689"><i class="fa fa-twitter"></i><img
+                  src="images/twtr1.png" alt="" height="50px" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Newsletter</h4>
+          <p>
+            Sign up for our newsletter to receive updates and special offers:
+          </p>
+          <form class="form-inline">
+            <div class="form-group">
+              <label class="sr-only" for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" />
+            </div>
+            <button type="Subscribe" class="btn btn-light mt-1">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
